@@ -1,4 +1,4 @@
-import { ClerkProvider } from "@/node_modules/@clerk/nextjs/dist/types/components.server";
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,7 +17,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClerkProvider>
+      <ClerkProvider 
+        appearance={{
+          layout:{
+            logoImageUrl: '/icons/yoom-logo.svg',
+            socialButtonsVariant: 'iconButton',
+          },
+          variables:{
+            colorText: '#fff',
+            colorPrimary: '#0E78F9',
+            colorBackground: '#1C1F2E',
+            colorInputBackground: '#252A41',
+            colorInputText: '#fff'
+          }
+        }}>
         <body className={`${inter.className} bg-dark-2`}>{children}</body>
       </ClerkProvider>
     </html>
