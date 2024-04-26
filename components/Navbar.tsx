@@ -9,13 +9,13 @@ const Navbar = () => {
     <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
       <Link href="/" className='flex item-center gap-1'>
         <Image
-          src="/icons/logo.svg"
-          alt="Yoom logo"
-          width={32}
-          height={32}
+          src="/icons/livid-logo.svg"
+          alt="Livid logo"
+          width={100}
+          height={100}
           className="max-sm:size:10"
         />
-      <p className="text-[26px] font-extrabold text-white max-sm:hidden">Xoom</p>
+      {/* <p className="text-[26px] font-extrabold text-white max-sm:hidden">Livid</p> */}
 
       </Link>
 

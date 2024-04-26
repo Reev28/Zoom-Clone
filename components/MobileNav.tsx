@@ -24,14 +24,14 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent side="left" className="border-none bg-dark-1">
         <Link href="/" className='flex item-center gap-1'>
-        <Image
-          src="/icons/logo.svg"
-          alt="Yoom logo"
-          width={32}
-          height={32}
+              <Image
+          src="/icons/livid-logo.svg"
+          alt="Livid logo"
+          width={100}
+          height={100}
           className="max-sm:size:10"
         />
-      <p className="text-[26px] font-extrabold text-white">Xoom</p>
+      {/* <p className="text-[26px] font-extrabold text-white max-sm:hidden">Livid</p> */}
       </Link>
 
       <div className="flex h-[calc(100vh-72px)] flex-col justify-betwen overflow-y-auto">
